@@ -16,6 +16,8 @@
  * Tags:              quotes, Islamic, social media, sharing, inspiration
  * Tested up to:      6.2
  * Stable tag:        1.0.0
+ * GitHub Plugin URI: https://github.com/moursalinislambd/islamic-quotes-plugin
+ * GitHub Branch:     main
  *
  * ------------------------------------------------------------------------
  * This plugin is free software: you can redistribute it and/or modify
