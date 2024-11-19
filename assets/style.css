@@ -1,0 +1,148 @@
+/* General Styles for the Plugin */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the Quote */
+.iq-quote-container {
+    background: linear-gradient(135deg, #ffffff 0%, #f0f8ff 100%);
+    border: 2px solid #007bff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 90%;
+    width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.iq-quote-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for the Quote Text */
+.iq-quote-text {
+    font-size: 22px;
+    font-style: italic;
+    color: #333333;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    position: relative;
+    padding: 10px 0;
+}
+
+.iq-quote-text::before {
+    content: '“';
+    font-size: 50px;
+    color: #007bff;
+    position: absolute;
+    left: -20px;
+    top: -10px;
+    font-family: 'Georgia', serif;
+}
+
+.iq-quote-text::after {
+    content: '”';
+    font-size: 50px;
+    color: #007bff;
+    position: absolute;
+    right: -20px;
+    bottom: -10px;
+    font-family: 'Georgia', serif;
+}
+
+/* Container for the Share Buttons */
+.iq-share-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* General Button Styling */
+.iq-share-btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    flex: 1 0 auto;
+    min-width: 120px;
+    max-width: 200px;
+    margin: 5px;
+}
+
+/* Facebook Button */
+.iq-share-btn.iq-facebook {
+    background-color: #4267B2;
+}
+
+.iq-share-btn.iq-facebook:hover {
+    background-color: #365899;
+}
+
+/* Twitter Button */
+.iq-share-btn.iq-twitter {
+    background-color: #1DA1F2;
+}
+
+.iq-share-btn.iq-twitter:hover {
+    background-color: #0d95e8;
+}
+
+/* WhatsApp Button */
+.iq-share-btn.iq-whatsapp {
+    background-color: #25D366;
+}
+
+.iq-share-btn.iq-whatsapp:hover {
+    background-color: #1ebea5;
+}
+
+/* Button Hover Effect */
+.iq-share-btn:hover {
+    opacity: 0.9;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .iq-quote-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .iq-quote-text {
+        font-size: 18px;
+        padding: 5px 0;
+    }
+
+    .iq-quote-text::before,
+    .iq-quote-text::after {
+        font-size: 40px;
+    }
+
+    .iq-share-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .iq-share-btn {
+        width: 100%;
+        margin: 5px 0;
+        max-width: none;
+    }
+}
